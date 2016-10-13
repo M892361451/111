@@ -1,0 +1,247 @@
+/*------------------head_nav---------------------------*/
+.header_nav{
+	background-color:#f6f6f6;
+	height:28px;
+	line-height: 20px;
+	z-index: 110;	
+}
+.header_nav .notice_scroll{
+	float: left;
+	font-size: 12px;
+	width: 250px;
+	overflow: hidden;
+	height: 28px;
+	line-height: 28px;
+	position: relative;
+}
+.header_nav .notice_scroll span {
+    background: url(img/icons.png) no-repeat -98px -196px;   
+    float: left;
+    padding-left: 18px;
+    color: #666;
+}
+.header_nav .notice_scroll .show_notice{
+	float: left;
+	width: 190px;
+	height: 28px;
+	position: absolute;
+	left: 57px;
+	top: 0;
+}
+ .header_nav .notice_scroll ul li {
+	float: left;
+    width: 190px;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+}
+.header_nav ul{	
+	float: right;	
+}
+.header_nav ul li{
+	float: left;	
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	
+}
+.header_nav ul li a{
+	margin: 0 10px;
+}
+.header_nav ul li a:hover{
+	color: red;
+}
+.header_nav ul{position: relative;}
+.header_nav .down_app{
+	width: 90px;
+	height: 120px;
+	padding: 0 10px;
+	text-align: center;
+	background:white;
+	z-index: 100;
+	position: absolute;
+	top: 28px;
+	right:0px;
+}
+.header_nav .down_app img{width: 70px;height: 70px;}
+.header_nav .down_app p a{
+	color: red;
+}
+/*---------------logo--------------------------------------*/
+.lands {height: 112px;}
+			
+.webz .logo_left a{
+	display: block;
+	float: left;
+	width: 185px;
+	height: 57px;
+    background: url(img/welland.gif) no-repeat 0 0;
+	}
+	
+.webz .logo_left span{
+	    width: 168px;
+	    height: 57px;
+	    float: left;
+	    background: url(img/welland.gif) no-repeat 0 -58px;
+	}
+.logo_right{
+	float: right;
+	margin-top: 55px;	
+}
+.logo_right span{
+	color: blue;   	
+}
+.logo_right em{
+	text-decoration: none;
+	font-size: 14px;
+	color: red;
+}
+    
+     /*-----------------------img_left-----------------------------------*/
+.img_left{
+	display: inline;
+	position: fixed;
+		top: 40%;
+}
+    /*-----------------------land_box-----------------------------------*/
+
+.landing_box{width: 970px;height: 375px;border: 2px solid #ff8400;overflow: hidden;position: relative;}
+.land{margin: 60px 0 0 135px ;}
+.land p{font-size: 12px; height:20px ;line-height: 20px;color: #666666;margin: 5px 0;}
+.land span{margin: 5px 0;}
+.che{margin: 5px 20px 0 0;}
+.landing{font-size: 14px; width: 350px;height: 35px;background: red;color: white;margin-top: 20px;border: none;}
+.land .phone{width: 350px;height: 35px;border: 1px solid silver;}
+.land .passs{width: 350px;height: 35px;border: 1px solid silver;}
+.tishi{
+   	width: 150px;
+   	height: 30px;
+   	line-height: 30px;
+   	border: 1px solid salmon;
+   }
+.box_right{ width: 300px;height: 372px;background: #fff6ec;position: absolute;right: 0;top: 0;}
+.box_right_comment{margin: 60px 0 0 80px;}
+.box_right_comment p{color: slategray;height: 28px; line-height: 28px;}
+.box_right_comment button{width: 142px; height: 32px;line-height: 32px;text-align: center; border: 1px solid #ff8400; background: white;}
+/*----------------------footer-------------------------------------------------*/
+.footer {
+	margin-top: 30px;
+	height:auto;
+	text-align:center;
+	background:none;	
+	border-top:1px solid #e3e3e3;
+}
+.footer .footad {
+	height:100px;
+	background-color:#f6f6f6;
+	
+}
+.footer .footad .webw {
+	height:100px;
+	overflow:hidden;
+	
+}
+.footer .flist {
+	float: left;
+	border-bottom:1px solid #e6e6e6;
+	padding:26px 0 26px 75px;
+}
+.footer .flistdl {
+	float:left;
+	width:95px;
+	height:114px;
+	padding-left:42px;
+	border-right:1px dotted #e6e6e6;
+	text-align:left;
+}
+.footer dl.nob {
+	border:0;
+}
+.footer .flistdl dt {
+	color:#333;
+	font-size:16px;
+	height:26px;
+	line-height:26px;
+}
+.footer .flistdl dd {
+	height:22px;
+	line-height:22px;
+}
+.footer .flistdl dd a {
+	color:#666;
+}
+.footer .flistdl dd a:hover {
+	color:#f70800;
+}
+.footer .flistdl2 {
+	margin-left:20px;
+	float:left;
+}
+.footer .flistdl2 dt {
+	width:80px;
+	text-align:center;
+}
+.footer .flistdl2 dt em {
+	color:#999;
+}
+.footer .flistdl2 dd {
+	margin:25px 0 0 25px;
+}
+.footerinfo {
+	float: left;
+	padding-top:22px;
+	line-height:22px;
+	text-align:center;
+	padding-left: 70px;
+	
+}
+p.footer-list {
+	height:26px;
+	color:#555;
+}
+p.footer-list a {
+	color:#555;
+	padding:0 8px;
+	font-size:13px;
+}
+p.footer-list a:hover {
+	color:#f70800;
+}
+.yqlink {
+	width:960px;
+	margin-left: 70px;
+}
+.yqlink .active {
+	height: auto;
+	max-height:66px;
+	overflow:hidden;
+}
+.dlphh {
+	line-height:22px;
+	height:22px;
+	overflow:hidden;
+	text-align:left;
+	width:900px;
+}
+.dlphh em {
+	padding-right:8px;
+	color:#666;
+}
+.dlphh a {
+	padding-right:8px;
+	color:#555;
+}
+.dlphh a:hover {
+	color:#f70800;
+}
+.r_button {
+	width:50px;
+	height:22px;
+	line-height:22px;
+	cursor:pointer;
+	color:#555;
+}
+p.copyright {
+	color:#555;
+	line-height:22px;
+}

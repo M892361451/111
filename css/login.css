@@ -1,0 +1,368 @@
+/*------------------head_nav---------------------------*/
+.header_nav{
+	background-color:#f6f6f6;
+	height:28px;
+	line-height: 20px;
+	z-index: 110;	
+}
+.header_nav .notice_scroll{
+	float: left;
+	font-size: 12px;
+	width: 250px;
+	overflow: hidden;
+	height: 28px;
+	line-height: 28px;
+	position: relative;
+}
+.header_nav .notice_scroll span {
+    background: url(img/icons.png) no-repeat -98px -196px;   
+    float: left;
+    padding-left: 18px;
+    color: #666;
+}
+.header_nav .notice_scroll .show_notice{
+	float: left;
+	width: 190px;
+	height: 28px;
+	position: absolute;
+	left: 57px;
+	top: 0;
+}
+ .header_nav .notice_scroll ul li {
+	float: left;
+    width: 190px;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+}
+.header_nav ul{	
+	float: right;	
+}
+.header_nav ul li{
+	float: left;	
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	
+}
+.header_nav ul li a{
+	margin: 0 10px;
+}
+.header_nav ul li a:hover{
+	color: red;
+}
+.header_nav ul{position: relative;}
+.header_nav .down_app{
+	width: 90px;
+	height: 120px;
+	padding: 0 10px;
+	text-align: center;
+	background:white;
+	z-index: 100;
+	position: absolute;
+	top: 28px;
+	right:0px;
+}
+.header_nav .down_app img{width: 70px;height: 70px;}
+.header_nav .down_app p a{
+	color: red;
+}
+/*---------------logo--------------------------------------*/
+.land {height: 112px;}
+			
+.webz .logo_left a{
+	display: block;
+	float: left;
+	width: 185px;
+	height: 57px;
+    background: url(img/welland.gif) no-repeat 0 0;
+	}
+	
+.webz .logo_left span{
+	    width: 168px;
+	    height: 57px;
+	    float: left;
+	    background: url(img/welland.gif) no-repeat 0 -58px;
+	}
+.logo_right{
+	float: right;
+	 margin-top: 30px;	
+}
+.logo_right a{
+	color: blue;
+	
+}
+.lognav{    		    	
+	height: 42px;
+    margin-top: 5px;           
+    }
+.active{background: url(../css/img/welreg_01.gif) no-repeat 0 -58px; color: #fff;}
+.move{background:url(../css/img/welreg_01.gif) no-repeat 0 -102px;}
+.lognav ul li{
+	    float: left;
+	    margin-right: 2px;
+	    width: 225px;
+	    height: 42px;
+	    cursor: pointer;
+	    line-height: 42px;
+	    font-size: 14px;
+	    color: #777777;
+	    font-weight: 600;
+	    text-align: center;
+	    			    
+}
+     /*-----------------------img_left-----------------------------------*/
+    .img_left{
+    	display:inline;
+		float: left;
+		position: fixed;
+		top: 40%;
+		
+    }
+    /*-----------------------框-----------------------------------*/
+   .land_con{  
+	 height: 430px;			   	 
+	 border: 2px solid #ff8400;
+   }
+   .phonelog{
+   	   display: block;
+   	   padding-top: 30px;
+   	
+   }
+   .tip1,.tip2,.tip3,.tip4,.tip5{
+   	display: block;
+   	width: 200px;
+   	height: 30px;
+   	line-height: 30px;
+   	float: right;
+   	margin-right: 230px;
+   	border: 1px solid salmon;
+   }
+  
+   
+    .spansty{height: 250px;}
+    
+	.spansty span {			
+	    display: inline-block;
+	    text-align: right;
+	    width: 187px;
+	    padding-right: 15px;
+	    height: 37px;
+	    line-height: 37px;
+	    color: #666666;
+	    margin-bottom: 10px;
+	}
+	.spansty .phone_num{
+		width: 350px;
+		height: 30px;
+		border: 1px solid silver;
+		background: url(../css/img/welland.gif) 0 -222px no-repeat;
+	}
+	.spansty .yanzheng{
+		width: 122px;
+		height: 30px;
+		border: 1px solid silver;
+    }
+    .yan{
+    	width: 100px;
+	    height: 16px;
+	    display: inline-block;
+	    line-height: 16px; 
+	    text-align: center;
+	    padding: 5px 0;
+	    border: 1px solid sandybrown;
+	    }
+	#shuayzm{cursor: pointer;color: blue;}
+    .spansty .password{
+		width: 350px;
+		height: 30px;
+		border: 1px solid silver;
+		background: url(../css/img/welland.gif) 0 -244px no-repeat;
+	}
+	
+	.spansty .regpassword{
+		width: 350px;
+		height: 30px;
+		border: 1px solid silver;
+		background: url(../css/img/welland.gif) 0 -244px no-repeat;
+	}
+	
+	
+	.spansty .duanxin{
+		width: 122px;
+		height: 30px;
+		border: 1px solid silver;
+    }
+	.end{
+		margin-left: 205px;
+	}
+	.end a{
+		color: blue;
+	}
+	.end .tijiao{
+		display: block;
+		width: 127px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		color: white;
+		background: #e50038;
+		margin: 18px 0 32px 0;
+	}
+	
+	
+/*---------------------------右侧悬浮---------------------------------------------------*/
+.xuanfu{
+	height:100%;
+	border-right:4px solid #222;
+	position:fixed;
+	right:0;
+	top:0;
+	_position:absolute;
+	_bottom:auto;
+	 _top:expression(eval(document.documentElement.scrollTop));
+	_height:expression(document.documentElement.clientHeight+"px")
+}
+.xuanfu .right1{
+	position: absolute;
+	top: 50%;
+	margin-top: -72px;
+	right: 0;
+	width: 36px;
+	height: 144px;
+	
+}
+.right1 .fly-user{
+	width: 36px;
+	height: 36px;
+	background: url(../css/img/xfbj.png) no-repeat top left;
+}
+.xuanfu .right2{
+	position: absolute;
+	bottom: -1px;
+	right: 0;
+	width: 36px;
+	height: 108px;
+}
+/*----------------------footer-------------------------------------------------*/
+.footer {
+	margin-top: 30px;
+	height:auto;
+	text-align:center;
+	background:none;	
+	border-top:1px solid #e3e3e3;
+}
+.footer .footad {
+	height:100px;
+	background-color:#f6f6f6;
+	
+}
+.footer .footad .webw {
+	height:100px;
+	overflow:hidden;
+	
+}
+.footer .flist {
+	float: left;
+	border-bottom:1px solid #e6e6e6;
+	padding:26px 0 26px 75px;
+}
+.footer .flistdl {
+	float:left;
+	width:95px;
+	height:114px;
+	padding-left:42px;
+	border-right:1px dotted #e6e6e6;
+	text-align:left;
+}
+.footer dl.nob {
+	border:0;
+}
+.footer .flistdl dt {
+	color:#333;
+	font-size:16px;
+	height:26px;
+	line-height:26px;
+}
+.footer .flistdl dd {
+	height:22px;
+	line-height:22px;
+}
+.footer .flistdl dd a {
+	color:#666;
+}
+.footer .flistdl dd a:hover {
+	color:#f70800;
+}
+.footer .flistdl2 {
+	margin-left:20px;
+	float:left;
+}
+.footer .flistdl2 dt {
+	width:80px;
+	text-align:center;
+}
+.footer .flistdl2 dt em {
+	color:#999;
+}
+.footer .flistdl2 dd {
+	margin:25px 0 0 25px;
+}
+.footerinfo {
+	float: left;
+	padding-top:22px;
+	line-height:22px;
+	text-align:center;
+	padding-left: 70px;
+	
+}
+p.footer-list {
+	height:26px;
+	color:#555;
+}
+p.footer-list a {
+	color:#555;
+	padding:0 8px;
+	font-size:13px;
+}
+p.footer-list a:hover {
+	color:#f70800;
+}
+.yqlink {
+	width:960px;
+	margin-left: 70px;
+}
+.yqlink .active {
+	height: auto;
+	max-height:66px;
+	overflow:hidden;
+}
+.dlphh {
+	line-height:22px;
+	height:22px;
+	overflow:hidden;
+	text-align:left;
+	width:900px;
+}
+.dlphh em {
+	padding-right:8px;
+	color:#666;
+}
+.dlphh a {
+	padding-right:8px;
+	color:#555;
+}
+.dlphh a:hover {
+	color:#f70800;
+}
+.r_button {
+	width:50px;
+	height:22px;
+	line-height:22px;
+	cursor:pointer;
+	color:#555;
+}
+p.copyright {
+	color:#555;
+	line-height:22px;
+}
