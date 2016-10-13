@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goods.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/youce.css"/>		
+        <link rel="stylesheet" type="text/css" href="../assets/xzoom/xzoom.css"/>        
+        <script src="../assets/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../assets/xzoom/xzoom.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/youce.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/goods.js" type="text/javascript" charset="utf-8"></script>
+         <script src="../assets/xcarousela/jquery.xcarousela.js" type="text/javascript" charset="utf-8"></script>  
+         <script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+       
+	</head>
+	<body>
+		
+		<!-------------------------head------------------------------------->
+	   <div class="header">
+           <div class="webz">
+           	  <a href="index.html"><img src="../img/head/head.jpg"/></a>
+           </div>
+	   </div>
+	   <div class="webz cl">
+	   	   <div class="header_nav">
+	   	    	<ul>
+		   	   	   <li><a href="login.html">注册</a> |</li>
+		   	   	   <li><a href="landing.html">登录</a> |</li>
+		   	   	   <li><a href="#">我的订单</a> |</li>
+		   	   	   <li><a href="#">物流查询</a> |</li>
+		   	   	   <li><a href="#">我的关注</a> |</li>
+		   	   	   <li><a href="#">资讯</a> |</li>
+		   	   	   <li><a href="#">品牌馆</a> |</li>
+		   	   	   <li id="xiazai">
+		   	   	   	    <a href="#">
+		   	   	   	       <img src="../css/img/phone.png"/>&nbsp;&nbsp;手机品优惠
+		   	   	   	       <div class="down_app" id="down_app" style="display:none;">                          
+                              <a href="#"><img alt="" title="" src="../css/img/ewm90X90.jpg" height="90" width="90"></a>
+	                          <p><a href="#">扫一扫哦~</a></p>
+                          
+                        </div>
+		   	   	       </a>
+		   	   	   </li>
+		   	   	   
+		   	   </ul>
+		   	   <!--公告-->
+	            <div class="notice_scroll">
+		            <span>公告：</span>
+		            <div class="show_notice " id="show_notice">
+		            	<ul >
+			            	<li><a href="#" target="_blank">【注意】自主语音订购说明</a></li>
+			            	<li><a href="#" target="_blank">【公告】防诈骗提醒</a></li>
+			            	<li><a href="#" target="_blank">【紧急通知】关于短信发送异常的公告</a></li>
+			            	<li><a href="#" target="_blank">优品惠5周年庆，盛大聚“惠”</a></li>
+			            </ul>
+		            </div>
+		            
+	            </div>
+	            <!--公告/-->
+	   	    </div>	   
+	   </div>
+	   
+	   
+<!-------------------------header_search------------------------------------->
+	   <div class="header_search">
+	   	    <div class="webz">
+	   	    	<div class="logo">
+	   	    	    <a href="../index.html"><img src="../img/head/logo.png"/></a>
+	   	    	    <div class="header_search_in">
+		   	    	<input type="text" class="search_in" name="" id="" placeholder="请输入商品名称或者货号" />
+		   	    	<button class="button">搜索</button>
+			   	    </div>
+			   	    
+			   	   <div class="header_gwc" id="gwc">
+			   	   	    <div class="car_bag">
+			   	   	    	<div class="gwc_bj">
+				   	   	    	<i class="icar t">
+				   	   	            <img src="../css/img/gwc.png" width="19"height="19"/>
+				   	   	    	</i>
+				   	   	    	<i class="ijt t"></i>
+				   	   	    	<a href="gwc.html">我的购物车</a>
+				   	   	    	<span class="cartnum t" id="cart_num_1">0</span>
+				   	   	    </div>	
+			   	   	    </div		   
+			   	   </div>	   	    	    
+		   	    </div>
+		   	    <p><a href="../index.html"><img src="../css/img/logom.jpg"/></a></p>
+		   	    
+	   	    </div>  
+	   </div>
+	   
+	   
+<!-------------------------nav------------------------------------->	   
+	   <div id="nav">
+	     	<div class="webz">
+	   	    	<ul class="nav_left">
+			   	  	<li class="hover"><a href="#">首页</a></li>
+			   	  	<li><a href="#">视频</a></li>
+			   	  	<li><a href="#">食品</a></li>
+			   	  	<li><a href="#">家居</a></li>
+			   	  	<li><a href="#">美妆</a></li>
+			   	  	<li><a href="#">服饰</a></li>
+			   	  	<li><a href="#">海外购</a></li>
+		   	    </ul>
+		   	  <div class="nav_right">
+		   	  	    <div class="car_nav" id="car_nav" style="display: none;">
+		   	  	    	<div class="car_nav1">
+							<h3 class="h"><img src="../css/img/newsix_03.png"/>品质厨房</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+								<li><a href="#">品质厨具</a></li>
+								<li><a href="#">厨房电器</a></li>
+								<li><a href="#">厨房用具</a></li>
+							</ul>
+						</div>
+						<div class="car_nav2">
+							<h3 class="h"><img src="../css/img/newsix_05.png"/>美食.民生</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+								<li><a href="#">进口食品</a></li>
+								<li><a href="#">营养保健</a></li>
+								<li><a href="#">特产零食</a></li>
+								<li><a href="#">粮油干货</a></li>
+								<li><a href="#">酒水茶饮</a></li>
+							</ul>
+						</div>
+						<div class="car_nav3">
+							<h3 class="h"><img src="../css/img/newsix_07.png"/>健康生活</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+							<li><a href="#">优质睡眠</a></li>
+							<li><a href="#">家居装修</a></li>
+							<li><a href="#">清洁收纳</a></li>
+							<li><a href="#">家庭健身</a></li>
+							<li><a href="#">生活电器</a></li>
+							</ul>
+							
+						</div>
+						<div class="car_nav4">
+							<h3 class="h"><img src="../css/img/newsix_09.png"/>魅力穿戴</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+							<li><a href="#">服装内衣</a></li>
+							<li><a href="#">鞋包配饰</a></li>
+							<li><a href="#">旅游户外</a></li>
+							</ul>
+							
+						</div>
+						<div class="car_nav5">
+							<h3 class="h"><img src="../css/img/newsix_11.png"/>珠宝收藏</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+							<li><a href="#">珍珠财宝</a></li>
+							<li><a href="#">翡翠玉石</a></li>
+							<li><a href="#">天然木饰</a></li>
+							<li><a href="#">文化收藏</a></li>
+							</ul>
+							
+						
+						</div>
+						<div class="car_nav6 boderno">
+							<h3 class="h"><img src="../css/img/newsix_13.png"/>美肤靓装</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+								<li><a href="#">品牌护肤</a></li>
+								<li><a href="#">洗护护理</a></li>
+								<li><a href="#">彩妆香水</a></li>
+								<li><a href="#">美容鬼泣</a></li>
+							</ul>
+							
+						</div>
+		   	  	    	
+		   	  	    </div>
+		   	  </div>
+		   	  
+	   	   </div>	   	  
+	   </div>
+	   	   
+		
+		<div class="webz">
+			<!------------------头部------------------>
+			<div class="sh-crumbs">
+	                        当前位置：
+		        <a href="#" title="">首页</a>
+		        <code>&gt;</code>
+		        <a href="" title="厨房">厨房</a>
+		        <code>&gt;</code>
+		        <a href="#" title="厨房电器">厨房电器</a>
+		        <code>&gt;</code>
+		        <a href="#" title="原汁机/榨汁机">原汁机/榨汁机</a>
+		        <code>&gt;</code> 韩国进口惠人二代原汁机尊享红超值特惠组    </div>
+			</div>
+		</div>	
+		<div class="webz">
+			<div class="sh_goods">
+				<div class="goods_left">
+					<div class="goods_img">
+						<a><img src="../img/goods_fdj/big1.jpg"/></a></li>
+							
+					</div>
+					<div class="goods_li " id="goods">
+						<ul class="scroll">
+							<li><a><img src="../img/goods_fdj/small1.jpg"/></a></li>
+							<li><a><img src="../img/goods_fdj/small2.jpg"/></a></li>
+							<li><a><img src="../img/goods_fdj/small3.jpg"/></a></li>
+							<li><a><img src="../img/goods_fdj/small4.jpg"/></a></li>
+							<li><a><img src="../img/goods_fdj/small5.jpg"/></a></li>                           
+						</ul>
+						
+					</div>
+					
+					<!----------------------分享----------------------------------------------->
+					<div class="goods_share">
+						<div class="goods_no">
+							<p>商品货号：</p><span>5616515615641</span>
+						</div>
+						<div class="share_to">
+							<a href="#"><span></span>分享</a>
+							<a href="#"><i></i>关注</a>
+						</div>
+					</div>
+				</div>
+				<div class="goods_right">
+					<!--<p>惠人</p>
+					<p>【买手说】柴火大院有机大米 真空包装 口感香甜软糯 </p>
+					<h3 class="right2">韩国进口惠人二代原汁机</h3>
+					<p class="right3">价格<span>￥2098</span></p>
+					<p class="right4">优惠 <span>立减</span>TV商品下单立减10元</p>
+					<p class="right5"><span>包邮</span>订单金额满168元包邮</p>
+					<p class="right6" style="display: none;">颜色
+						<i></i>
+						<span><img src="../img/goods_fdj/big5.jpg"/>
+						</span>
+					</p>
+					<p class="right7">数量
+					    <span class="box">
+							<a href="javascript:;" id="lessBtn" class="limit">-</a>
+							<input class="l" id="goodsNumberInput" value="1" type="text">
+							<a href="javascript:;" id="addBtn">+</a>
+						</span>	
+					</p>-->
+				<!--	<button type="button" class="ad_cart" data-name="addCartTrigger" data-trigger-status="open">加入购物车</button>			-->		
+				</div>
+				
+				
+			</div>		
+		</div>
+		<div class="webz">
+			<img src="../img/goodsdetail/declaration2.jpg"/>
+		</div>	
+        <div class="webz mtop">
+        	<!-------------商品详情------------------------>
+        	<div class="goodsdetail_left">        		
+        		<div class="detail_nav" id="tit">
+        			 <div class="tab-select">
+                        <a class="active" href="#details" title="" data-scorll="details">商品详情</a>
+                        <a class="" href="#comments" title="" data-scorll="comments">评论 <span id="flcomments">()</span></a>
+                        <a class="" href="#services" title="" data-scorll="services">服务说明</a>
+                    </div>
+                </div>
+                 <div class="details" id="details">
+                    <h3 class="title"></h3>
+                    <div class="tab">
+                    	<ul class="detail_tab">                    		
+							<li class="row clearfix">
+								<div class="titles"><span>商品名称</span></div>
+								<div class="detailss">韩国Pallaskr家用餐具保洁柜38L(赠陶瓷刀五件）</div>
+							</li>
+							<li class="row clearfix">
+								<div class="titles text-left"><span>品牌</span></div>
+								<div class="detailss">PALLAS</div>
+							</li>
+							<li class="row clearfix">
+								<div class="titles"><span>上架时间</span></div>
+								<div class="detailss">2016-07-20</div>
+							</li>
+							<li class="row clearfix">
+                                <div class="titles"><span>规格参数</span></div>
+                                <div class="detailss">
+									商品名称：韩国进口康绮墨丽珍气泫防脱红参洗发护发5瓶特惠组<br>
+									品 牌：康绮墨丽<br>
+									分 类：洗护洗发<br>功 效：防脱控油去屑止痒<br>
+									退货政策：包装完整，不影响二次销售<br>
+									规格：康绮墨丽珍气泫洗发乳 400ml*3*瓶;康绮墨丽珍气泫护发素 400ml*2瓶<br>
+									适用人群：任何人群<br>
+									产品包装：盒装<br>
+									保质期限：3年 
+                                </div>
+                            </li>
+							<li class="row clearfix">
+	                            <div class="titles"><span>包装清单</span></div>
+	                            <div class="detailss">
+	                                <p> 康绮墨丽 珍气泫 洗发乳 400ml*3*瓶 康绮墨丽 珍气泫 护发素 400ml*2*瓶                                </p>
+	                            </div>
+	                        </li>                                                                                                          
+                    	</ul>
+                    </div>
+                    
+                    <div class="show_img">
+                    	<ul>
+                    		<li><img src="../img/goods_img/10.jpg"/></li>
+                    	</ul>
+                    </div>
+                   <!-------------------用户评价--------------------------------->
+                    <h3 class="title2"></h3>
+                   
+                    <div class="comment-box" id="comments">
+                    	
+                        <div class="inner-header clearfix">
+                            <div class="select-comment">
+                                <ul>
+                                    <li>
+                                        <div class="custom-radio"><input checked="checked" name="comment" value="all" id="all" type="radio"><label for="all" class="checked"><i></i><span id="allifno">全部评论(13)</span></label></div>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="custom-radio"><input name="comment" value="good" id="good" type="radio"><label for="good"><i></i><span id="goodifno">好评(13)</span></label></div>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="custom-radio"><input name="comment" value="general" id="general" type="radio"><label for="general"><i></i><span id="genifno">中评(0)</span></label></div>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="custom-radio"><input name="comment" value="bad" id="bad" type="radio"><label for="bad"><i></i><span id="badifno">差评(0)</span></label></div>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show-pic">
+                                <div class="custom-checkbox"><input id="is-show-pic" value="show_pic" name="is-show-pic" type="checkbox"><label for="is-show-pic"><i></i><span>有晒图</span></label></div>
+                                
+                            </div>
+                        </div>
+                        <div class="comment-box-list">
+                            <ul class="comment-list" id="goods_comment"><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            放碗的地方我家里的放不下，启动后有些味的，价格有点小贵哟，赠的刀挺好用。
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-09-13 05:27:49</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>151****0332</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            这款家用消毒柜，保洁柜是正品呀，外观大小超合体，质量也好，即美观又大方，最主要的是家里的餐具整洁而且干净，还卫生，餐具用起来放――是一款家里必备的用品，有喜欢的朋友快点下手吧，店家人特别好，物流快，包装好，以后还会光顾的。谢谢店家送我的礼物。
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-23 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>136*****2555</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            东西收到了，做活动的时候买的，价格很实惠。家里有个宝宝总是想弄干净些，碗筷洗完就可以直接进行消毒很方便，都是一键操作很简单老人也会使用。
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-23 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>136*****2523</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            这款太实用了，空间大，省地方。奶瓶也不用专用消毒机了，有了这个，真的太方便了。而且再也不用去擦碗了，我跟我媳妇再也不用进行为洗碗进行猜拳了，以后做饭，不用洗碗后擦碗真好，洗好了直接放进去就可以。消毒柜外观漂亮,使用方便,质量很好，很值这个价,物流也快,店家服务态度好！好评，回头给我爸妈也买一个！
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-22 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>139*****0300</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            小家伙用处大，由天厨房开发商没留位置装消毒柜，上网找到这款，收到后试用了一下，不错！挺实用的．值得推荐
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-22 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>185*****5643</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            宝贝与描述一致 已经消毒一次了 很简单 很干净 很喜欢
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-20 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>136*****1783</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            消毒柜很好用，再也不用拿开水烫碗了 大大的提高我的时间，太方便了
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-19 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>158*****2366</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            蒸烤一体箱好用方便，里外熟的都很好，受热均匀。
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-18 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>182*****9999</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            收到立马安装使用，放在厨房高大上，再追加个给老妈
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-18 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>183*****2022</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li><li class="clearfix">
+                                    <div class="descrption">
+                                        <p class="text">
+                                            买回来一看，大小正合适，三口之家比较实用。
+                                        </p>
+                                        <ul class="clearfix"></ul>
+                        <p class="datetime">2016-08-17 00:00:00</p>
+                            </div>
+                            <div class="attr">
+                                <p>
+                                 &nbsp;
+                                </p>
+                                <p>
+                                  &nbsp;
+                                </p>
+                            </div>
+                            <div class="author">
+                                <span>136*****4302</span>
+                                <i class="comment-star comment-star-5"></i>
+                            </div>
+                        </li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="comment-page">
+                    	<a class="text" href="#goods_comment"><code class="code-r">&lt;</code>上一页</a>
+                    	<a href="#goods_comment" onclick="comment_pl(1)" class="p_num current">1</a>
+                    	<a href="#goods_comment" onclick="comment_pl(2)" class="p_num">2</a>
+                    	<a class="text" href="#goods_comment" onclick="comment_pl(&quot;2&quot;)">下一页<code class="code-l">&gt;</code></a>
+                    </div>
+                  
+                     <!-------------------服务说明--------------------------------->
+                    <h3 class="title3"></h3>
+                   
+                    <div class="services_box" id="services">
+                    	<img src="../img/goodsdetail/fei-service-pay.jpg"/>
+                    	<img src="../img/goodsdetail/fei-service-ps.jpg"/>
+                    	<img src="../img/goodsdetail/fei-service-tui.jpg"/>
+                    </div>
+                    
+                    <div class="services_box1">                       
+                            <span class="label">使用指南：</span>
+                    
+                            <div class="hiddens">
+                            	
+                                <ul class="left">
+                                        <li><a href="#" target="_blank">1. 买微波炉 口碑top4品牌推荐</a></li>
+                                        <li><a href="#" target="_blank">2. 什么微波炉好</a></li>
+                                        <li><a href="#" target="_blank">3. 微波炉辐射会影响健康吗</a></li>
+                                        <li><a href="#" target="_blank">4. 使用微波炉烹饪出色美食的小绝招</a></li>
+                                        <li><a href="#" target="_blank">5. 选购微波炉三大注意事项</a></li>
+                                        <li><a href="#" target="_blank">6. 微波炉使用注意事项</a></li>
+                                        <li><a href="#" target="_blank">7. 你不知道的微波炉四大妙用</a></li>
+                                        <li><a href="#" target="_blank">8. 清洗微波炉的小技巧</a></li>
+                               
+                                </ul>
+                                 
+                            </div>
+                           
+                    </div>
+                    
+                </div>
+    		</div>
+        	
+        		
+        	<!---------大家都在看--------------->
+        	<div class="watching">
+	            <h3 class="title">
+	                                      大家都在看
+	            </h3>
+	            <ul id="all_watching">
+	            	<li>
+	                    <a href="#">
+	                        <img src="../img/goods_fdj/small1.jpg" >
+	                        <span class="title">[韩国现代] 绞肉机橙色（多功能，超强电机）</span>
+	                        <span class="price">
+	                                <span><i>￥</i>158</span>
+	                        </span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <img src="../img/goods_fdj/small1.jpg" >
+	                        <span class="title">[韩国现代] 绞肉机橙色（多功能，超强电机）</span>
+	                        <span class="price">
+	                                <span><i>￥</i>158</span>
+	                        </span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <img src="../img/goods_fdj/small1.jpg" >
+	                        <span class="title">[韩国现代] 绞肉机橙色（多功能，超强电机）</span>
+	                        <span class="price">
+	                                <span><i>￥</i>158</span>
+	                        </span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <img src="../img/goods_fdj/small1.jpg" >
+	                        <span class="title">[韩国现代] 绞肉机橙色（多功能，超强电机）</span>
+	                        <span class="price">
+	                                <span><i>￥</i>158</span>
+	                        </span>
+	                    </a>
+	                </li>
+	                
+	               </ul>
+	        </div>
+       
+            <!----------------------------同类商品----------------------------------------->
+            <div class="similer_goods">
+            	<div class="similer_top">
+            		<h3>查看其它同类商品</h3>
+            	</div>
+            	<div class="similer_goods_box">
+            		<ul>
+		            	<li>
+                            <a href="#" target="_blank">
+                                <img src="../img/goods_fdj/small1.jpg" >
+                                <span class="title">SutaKing手打王原面机</span>
+                                <span class="price">
+                                        <span><i>￥</i>598</span>
+                                </span>
+                            </a>
+                       </li>
+                       <li>
+                            <a href="#" target="_blank">
+                                <img src="../img/goods_fdj/small1.jpg" >
+                                <span class="title">SutaKing手打王原面机</span>
+                                <span class="price">
+                                        <span><i>￥</i>598</span>
+                                </span>
+                            </a>
+                       </li>
+                       <li>
+                            <a href="#" target="_blank">
+                                <img src="../img/goods_fdj/small1.jpg" >
+                                <span class="title">SutaKing手打王原面机</span>
+                                <span class="price">
+                                        <span><i>￥</i>598</span>
+                                </span>
+                            </a>
+                       </li>
+                       <li>
+                            <a href="#" target="_blank">
+                                <img src="../img/goods_fdj/small1.jpg" >
+                                <span class="title">SutaKing手打王原面机</span>
+                                <span class="price">
+                                        <span><i>￥</i>598</span>
+                                </span>
+                            </a>
+                       </li>
+                       
+                       
+		            </ul>
+            	</div>
+            </div>
+        
+        </div>
+       <!----------------------------------------右侧广告--------------------------------------------------->		
+	
+<div class="sidebar-out">			
+</div>
+<div class="sidebar">
+			<ul class="bar-top">
+				<li class="fly-user">
+					<div class="user-c" id="_AD_right_my">
+						<a class="a-user-c a-sidebar"></a>
+						<div class="sidebarcom-hover">
+							<a class="closex"></a>
+							<div class="slide-login" id="left_user_info">
+								<a href="javascript:void(0);" class="slide-pic"><img alt="" src="../css/img/72x72.jpg" height="72" width="72"></a>
+								<p class="slide-login-btn">你好！请<a rel="nofollow" href="landing.html">登录</a>|<a href="login.html" rel="nofollow">注册</a></p>
+							</div>
+							<p class="slide-login-go">
+								<a href="#" class="a-mydd">我的订单</a>
+								<a href="#" class="a-myyhq">优惠券</a>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="fly-cart">
+					<div class="cart-c" id="_AD_right_shoppingcart">
+						<a class="a-cart-c  a-sidebar"></a>
+						<em class="cart-num" id="cart_num_2">0</em>
+						<p class="slide-hui"><a href="gwc.html">购物车</a></p>
+					</div>
+				</li>
+				<li class="fly-care">
+					<div class="care-c" id="_AD_right_care">
+						<a class="a-care-c  a-sidebar"></a>
+						<p class="slide-hui"><a href="#">我的关注</a></p>
+					</div>
+				</li>
+				<li class="fly-ser">
+					<div class="ser-c" id="_AD_right_im">
+						<a class="a-ser-c a-sidebar"></a>
+						<p class="slide-hui"><a href="javascript:void(0)" onclick="NTKF.im_openInPageChat()" target="_self">在线客服</a></p>
+					</div>
+				</li>
+			</ul>
+			<ul class="bar-bot">
+				<li class="fly-code">
+					<div class="code-c">
+						<a class="a-code-c a-sidebar"></a>
+						<p class="code-pic">
+							<a href="#" target="_blank"><img alt="优品惠手机APP" src="../css/img/code.jpg" height="182" width="132"></a>
+						</p>
+					</div>
+				</li>
+				<li class="fly-ask">
+					<div class="ask-c" id="_AD_right_feedback">
+						<a class="a-ask-c a-sidebar"></a>
+						<p class="slide-hui"><a href="#">调查问卷</a></p>
+					</div>
+				</li>
+				<li class="fly-return">
+					<div class="return-c" id="_AD_right_top">
+						<a class="a-return-c a-sidebar"></a>
+						<p class="slide-hui"><a>返回顶部</a></p>
+					</div>
+				</li>
+			</ul>
+			
+			</div>
+             <!-------------------------尾部-------------------------------------->
+	    <div class="footer">
+		  <div class="footad webz">
+		    <div class="webz"><img alt=""src="../css/img/footer_ad.jpg" width="1000" height="102"/></div>
+		  </div>    
+		    
+		  <div class="webz">
+		    <div class="flist clearfix">
+		      <dl class="flistdl">
+		        <dt>新手上路</dt>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-37.html">新用户注册</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-46.html">忘记密码</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-45.html">购物流程</a></dd>
+		      </dl>
+		      <dl class="flistdl">
+		        <dt>支付配送</dt>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-38.html">货到付款</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-49.html">支付宝</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-52.html">配送方式</a></dd>
+		      </dl>
+		      <dl class="flistdl">
+		        <dt>会员服务</dt>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-54.html">服务承诺</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-1379.html">会员制度</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-47.html">积分介绍</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-40.html">退换货原则</a></dd>
+		      </dl>
+		      <dl class="flistdl nob">
+		        <dt>关于优品惠</dt>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/about_index.php">企业介绍</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a></dd>
+		      </dl>
+		      <dl class="flistdl2 clearfix">
+		        <dt class="l"><a target="_blank" href="#"><img alt="" src="../css/img/ewm90X90.jpg" width="80" height="80"/><i>手机优品惠</i><em>（优购物）</em></a></dt>
+		        <dd class="l"><img alt="" src="../css/img/foot_dh.jpg" width="149" height="38" /></dd>
+		      </dl>
+		    </div>
+		  </div>
+		  <div class="footerinfo webw">
+		    <p class="footer-list"><a target="_blank" href="http://www.ugoshop.com">首页</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/about_index.php">关于优品惠</a> |
+		    <a target="_blank" href="/about_index.php?company=ugo">优购物</a> |
+			<a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/about_join.php">招贤纳士</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a> | 
+			<a target="_blank" href="http://scm.17ugo.com/">供应商入口</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/link.php">友情链接</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/sitemap.html">网站地图</a> | 
+			<a target="_blank" href="http://info.ugoshop.com/">资讯中心</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/review.html">评论</a> |
+			<a target="_blank" href="http://www.ugoshop.com/photo.html"> 图片</a>
+			</p>
+		  <div class="yqlink clearfix">
+		     
+		    </div>    
+		    
+		    <p class="copyright">优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+		    
+		    <p class="copyright">Copyright©2007-2015   北京优购文化发展有限公司版权所有   京ICP备14018505号   食品流通许可证编号SP1103021310006741(1-1)</p>
+		    
+		    <p class="copyright"> 公司地址:北京市经济技术开发区同济南路19号   服务热线：400-707-0707</p>
+		    
+		    <div style="margin:0 auto;text-align:center; padding-bottom: 90px;">
+		        <a target="_blank" href="#" style="display:inline-block;text-decoration:none;height:22px;line-height:22px;">
+		            <img src="../css/img/bei.png" style="float:left;"/>
+		            <p style="float:left;margin: 0px 0px 0px 5px; color:#555;">京公网安备 11030102000055号</p>
+		        </a>	 	
+            </div>  
+		  </div>
+		</div>
+	</body>
+</html>

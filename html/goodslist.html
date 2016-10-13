@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goodslist.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/youce.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/xcarousela/jquery.xcarousela.css"/>
+		<script src="../assets/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/xcarousela/jquery.xcarousela.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/youce.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/goodslist.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		
+		
+		
+		<!-------------------------head------------------------------------->
+	   <div class="header">
+           <div class="webz">
+           	  <a href="index.html"><img src="../img/head/head.jpg"/></a>
+           </div>
+	   </div>
+	   <div class="webz cl">
+	   	   <div class="header_nav">
+	   	    	<ul>
+		   	   	   <li><a href="login.html">注册</a> |</li>
+		   	   	   <li><a href="landing.html">登录</a> |</li>
+		   	   	   <li><a href="#">我的订单</a> |</li>
+		   	   	   <li><a href="#">物流查询</a> |</li>
+		   	   	   <li><a href="#">我的关注</a> |</li>
+		   	   	   <li><a href="#">资讯</a> |</li>
+		   	   	   <li><a href="#">品牌馆</a> |</li>
+		   	   	   <li id="xiazai">
+		   	   	   	    <a href="#">
+		   	   	   	       <img src="../css/img/phone.png"/>&nbsp;&nbsp;手机品优惠
+		   	   	   	       <div class="down_app" id="down_app" style="display:none;">                          
+                              <a href="#"><img alt="" title="" src="../css/img/ewm90X90.jpg" height="90" width="90"></a>
+	                          <p><a href="#">扫一扫哦~</a></p>
+                          
+                        </div>
+		   	   	       </a>
+		   	   	   </li>
+		   	   	   
+		   	   </ul>
+		   	   <!--公告-->
+	            <div class="notice_scroll">
+		            <span>公告：</span>
+		            <div class="show_notice " id="show_notice">
+		            	<ul >
+			            	<li><a href="#" target="_blank">【注意】自主语音订购说明</a></li>
+			            	<li><a href="#" target="_blank">【公告】防诈骗提醒</a></li>
+			            	<li><a href="#" target="_blank">【紧急通知】关于短信发送异常的公告</a></li>
+			            	<li><a href="#" target="_blank">优品惠5周年庆，盛大聚“惠”</a></li>
+			            </ul>
+		            </div>
+		            
+	            </div>
+	            <!--公告/-->
+	   	    </div>	   
+	   </div>
+	   
+	   
+<!-------------------------header_search------------------------------------->
+	   <div class="header_search">
+	   	    <div class="webz">
+	   	    	<div class="logo">
+	   	    	    <a href="../index.html"><img src="../img/head/logo.png"/></a>
+	   	    	    <div class="header_search_in">
+		   	    	<input type="text" class="search_in" name="" id="" placeholder="请输入商品名称或者货号" />
+		   	    	<button class="button">搜索</button>
+			   	    </div>
+			   	    
+			   	   <div class="header_gwc" id="gwc">
+			   	   	    <div class="car_bag">
+			   	   	    	<div class="gwc_bj">
+				   	   	    	<i class="icar t">
+				   	   	            <img src="../css/img/gwc.png" width="19"height="19"/>
+				   	   	    	</i>
+				   	   	    	<i class="ijt t"></i>
+				   	   	    	<a href="gwc.html">我的购物车</a>
+				   	   	    	<span class="cartnum t" id="cart_num_1">0</span>
+				   	   	    </div>	
+			   	   	    </div		   
+			   	   </div>	   	    	    
+		   	    </div>
+		   	    <p><a href="../index.html"><img src="../css/img/logom.jpg"/></a></p>
+		   	    
+	   	    </div>  
+	   </div>
+	   
+	   
+<!-------------------------nav------------------------------------->	   
+	   <div id="nav">
+	     	<div class="webz">
+	   	    	<ul class="nav_left">
+			   	  	<li class="hover"><a href="#">首页</a></li>
+			   	  	<li><a href="#">视频</a></li>
+			   	  	<li><a href="#">食品</a></li>
+			   	  	<li><a href="#">家居</a></li>
+			   	  	<li><a href="#">美妆</a></li>
+			   	  	<li><a href="#">服饰</a></li>
+			   	  	<li><a href="#">海外购</a></li>
+		   	    </ul>
+		   	  <div class="nav_right">
+		   	  	    <div class="car_nav" id="car_nav" style="display: none;">
+		   	  	    	<div class="car_nav1">
+							<h3 class="h"><img src="../css/img/newsix_03.png"/>品质厨房</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+								<li><a href="#">品质厨具</a></li>
+								<li><a href="#">厨房电器</a></li>
+								<li><a href="#">厨房用具</a></li>
+							</ul>
+						</div>
+						<div class="car_nav2">
+							<h3 class="h"><img src="../css/img/newsix_05.png"/>美食.民生</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+								<li><a href="#">进口食品</a></li>
+								<li><a href="#">营养保健</a></li>
+								<li><a href="#">特产零食</a></li>
+								<li><a href="#">粮油干货</a></li>
+								<li><a href="#">酒水茶饮</a></li>
+							</ul>
+						</div>
+						<div class="car_nav3">
+							<h3 class="h"><img src="../css/img/newsix_07.png"/>健康生活</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+							<li><a href="#">优质睡眠</a></li>
+							<li><a href="#">家居装修</a></li>
+							<li><a href="#">清洁收纳</a></li>
+							<li><a href="#">家庭健身</a></li>
+							<li><a href="#">生活电器</a></li>
+							</ul>
+							
+						</div>
+						<div class="car_nav4">
+							<h3 class="h"><img src="../css/img/newsix_09.png"/>魅力穿戴</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+							<li><a href="#">服装内衣</a></li>
+							<li><a href="#">鞋包配饰</a></li>
+							<li><a href="#">旅游户外</a></li>
+							</ul>
+							
+						</div>
+						<div class="car_nav5">
+							<h3 class="h"><img src="../css/img/newsix_11.png"/>珠宝收藏</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+							<li><a href="#">珍珠财宝</a></li>
+							<li><a href="#">翡翠玉石</a></li>
+							<li><a href="#">天然木饰</a></li>
+							<li><a href="#">文化收藏</a></li>
+							</ul>
+							
+						
+						</div>
+						<div class="car_nav6 boderno">
+							<h3 class="h"><img src="../css/img/newsix_13.png"/>美肤靓装</h3>
+							<ul>
+								<li><a href="#">电视热销</a></li>
+								<li><a href="#">品牌护肤</a></li>
+								<li><a href="#">洗护护理</a></li>
+								<li><a href="#">彩妆香水</a></li>
+								<li><a href="#">美容鬼泣</a></li>
+							</ul>
+							
+						</div>
+		   	  	    	
+		   	  	    </div>
+		   	  </div>
+		   	  
+	   	   </div>	   	  
+	   </div>
+		
+		<div class="topad-box">
+	        <div class="top_banner">
+	            <div class="top_banner_img">
+	                <a href="#" target="_blank"><img src="../img/goods_list/1475862873160295858.jpg" alt="护肤大作战" title="护肤大作战"></a>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="tax_rule">
+	        <div class="webz">
+	            <img src="../img/goods_list/tax_rule.jpg">
+	        </div>
+	    </div>
+		<div class=" webz">
+			<!--------------------------每日精选---------------------------->
+			<div class="colunm_tit c_clearfix">
+	            <h1 class="boutique fl" title="精品推荐">精品推荐</h1>
+	            <span class="subtit fl">超值特惠 每日必逛</span>
+			</div>
+			<div class="goods_choice">
+					<a href="#"><img src="../img/goods_list/1473183454306431961.jpg"/></a>
+					<a href="#"><img src="../img/goods_list/1473183454306431961.jpg"/></a>
+					<a href="#"><img src="../img/goods_list/1473183454306431961.jpg"/></a>
+					<a href="#"><img src="../img/goods_list/1473183454306431961.jpg"/></a>
+			</div>
+			
+			<!--------------------------今日上新---------------------------->
+			<div class="colunm_tit c_clearfix">
+	            <h1 class="day_new fl" title="精品推荐">今日上新</h1>
+	            <span class="subtit fl">每周一、三、五十点准时开枪</span>
+			</div>
+			
+			<div class="goods" id="goods">
+				
+			</div>
+			
+		</div>
+		
+		       <!----------------------------------------右侧广告--------------------------------------------------->		
+	
+<div class="sidebar-out">			
+</div>
+<div class="sidebar">
+			<ul class="bar-top">
+				<li class="fly-user">
+					<div class="user-c" id="_AD_right_my">
+						<a class="a-user-c a-sidebar"></a>
+						<div class="sidebarcom-hover">
+							<a class="closex"></a>
+							<div class="slide-login" id="left_user_info">
+								<a href="javascript:void(0);" class="slide-pic"><img alt="" src="../css/img/72x72.jpg" height="72" width="72"></a>
+								<p class="slide-login-btn">你好！请<a rel="nofollow" href="landing.html">登录</a>|<a href="login.html" rel="nofollow">注册</a></p>
+							</div>
+							<p class="slide-login-go">
+								<a href="#" class="a-mydd">我的订单</a>
+								<a href="#" class="a-myyhq">优惠券</a>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="fly-cart">
+					<div class="cart-c" id="_AD_right_shoppingcart">
+						<a class="a-cart-c  a-sidebar"></a>
+						<em class="cart-num" id="cart_num_2">0</em>
+						<p class="slide-hui"><a href="gwc.html">购物车</a></p>
+					</div>
+				</li>
+				<li class="fly-care">
+					<div class="care-c" id="_AD_right_care">
+						<a class="a-care-c  a-sidebar"></a>
+						<p class="slide-hui"><a href="#">我的关注</a></p>
+					</div>
+				</li>
+				<li class="fly-ser">
+					<div class="ser-c" id="_AD_right_im">
+						<a class="a-ser-c a-sidebar"></a>
+						<p class="slide-hui"><a href="javascript:void(0)" onclick="NTKF.im_openInPageChat()" target="_self">在线客服</a></p>
+					</div>
+				</li>
+			</ul>
+			<ul class="bar-bot">
+				<li class="fly-code">
+					<div class="code-c">
+						<a class="a-code-c a-sidebar"></a>
+						<p class="code-pic">
+							<a href="#" target="_blank"><img alt="优品惠手机APP" src="../css/img/code.jpg" height="182" width="132"></a>
+						</p>
+					</div>
+				</li>
+				<li class="fly-ask">
+					<div class="ask-c" id="_AD_right_feedback">
+						<a class="a-ask-c a-sidebar"></a>
+						<p class="slide-hui"><a href="#">调查问卷</a></p>
+					</div>
+				</li>
+				<li class="fly-return">
+					<div class="return-c" id="_AD_right_top">
+						<a class="a-return-c a-sidebar"></a>
+						<p class="slide-hui"><a>返回顶部</a></p>
+					</div>
+				</li>
+			</ul>
+			
+			</div>
+			
+		   <!-------------------------尾部-------------------------------------->
+	    <div class="footer">
+		  <div class="footad webz">
+		    <div class="webz"><img alt=""src="../css/img/footer_ad.jpg" width="1000" height="102"/></div>
+		  </div>    
+		    
+		  <div class="webz">
+		    <div class="flist clearfix">
+		      <dl class="flistdl">
+		        <dt>新手上路</dt>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-37.html">新用户注册</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-46.html">忘记密码</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-45.html">购物流程</a></dd>
+		      </dl>
+		      <dl class="flistdl">
+		        <dt>支付配送</dt>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-38.html">货到付款</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-49.html">支付宝</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-52.html">配送方式</a></dd>
+		      </dl>
+		      <dl class="flistdl">
+		        <dt>会员服务</dt>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-54.html">服务承诺</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-1379.html">会员制度</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-47.html">积分介绍</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/article-40.html">退换货原则</a></dd>
+		      </dl>
+		      <dl class="flistdl nob">
+		        <dt>关于优品惠</dt>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/about_index.php">企业介绍</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a></dd>
+		        <dd><a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a></dd>
+		      </dl>
+		      <dl class="flistdl2 clearfix">
+		        <dt class="l"><a target="_blank" href="#"><img alt="" src="../css/img/ewm90X90.jpg" width="80" height="80"/><i>手机优品惠</i><em>（优购物）</em></a></dt>
+		        <dd class="l"><img alt="" src="../css/img/foot_dh.jpg" width="149" height="38" /></dd>
+		      </dl>
+		    </div>
+		  </div>
+		  <div class="footerinfo webw">
+		    <p class="footer-list"><a target="_blank" href="http://www.ugoshop.com">首页</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/about_index.php">关于优品惠</a> |
+		    <a target="_blank" href="/about_index.php?company=ugo">优购物</a> |
+			<a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/about_join.php">招贤纳士</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a> | 
+			<a target="_blank" href="http://scm.17ugo.com/">供应商入口</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/link.php">友情链接</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/sitemap.html">网站地图</a> | 
+			<a target="_blank" href="http://info.ugoshop.com/">资讯中心</a> | 
+			<a target="_blank" href="http://www.ugoshop.com/review.html">评论</a> |
+			<a target="_blank" href="http://www.ugoshop.com/photo.html"> 图片</a>
+			</p>
+		  <div class="yqlink clearfix">
+		     
+		    </div>    
+		    
+		    <p class="copyright">优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+		    
+		    <p class="copyright">Copyright©2007-2015   北京优购文化发展有限公司版权所有   京ICP备14018505号   食品流通许可证编号SP1103021310006741(1-1)</p>
+		    
+		    <p class="copyright"> 公司地址:北京市经济技术开发区同济南路19号   服务热线：400-707-0707</p>
+		    
+		    <div style="margin:0 auto;text-align:center; padding-bottom: 90px;">
+		        <a target="_blank" href="#" style="display:inline-block;text-decoration:none;height:22px;line-height:22px;">
+		            <img src="../css/img/bei.png" style="float:left;"/>
+		            <p style="float:left;margin: 0px 0px 0px 5px; color:#555;">京公网安备 11030102000055号</p>
+		        </a>	 	
+            </div>  
+		  </div>
+		</div>	
+	</body>
+</html>
